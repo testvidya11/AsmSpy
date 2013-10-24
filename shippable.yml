@@ -5,6 +5,4 @@ build_environment: win2012
 before_script:
  - cmd /c "IF NOT EXIST shippable mkdir shippable"
  - cmd /c "IF NOT EXIST shippable\testresults mkdir shippable\testresults" 
- script:
- - msbuild AsmSpy.sln
  
