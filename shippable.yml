@@ -6,5 +6,5 @@ before_script:
  - cmd /c "IF NOT EXIST shippable mkdir shippable"
  - cmd /c "IF NOT EXIST shippable\testresults mkdir shippable\testresults" 
  script:
- - msbuild Shippable.CSharpSample.sln
- - cmd /c "packages\OpenCover.4.5.1923\OpenCover.Console.exe -register:user -target:".\runTests.cmd" -output:shippable\codecoverage\coveragereport.xml -log:All"
+ - msbuild ./program.cs
+ 
