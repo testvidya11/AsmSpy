@@ -7,5 +7,4 @@ before_script:
  - cmd /c "IF NOT EXIST shippable\testresults mkdir shippable\testresults" 
 script:
  - msbuild AsmSpy.sln
- - cmd /c .\runTests.cmd" -output:shippable\codecoverage\coveragereport.xml -log:All"
  
