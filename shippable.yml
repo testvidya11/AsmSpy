@@ -7,5 +7,5 @@ before_script:
  - cmd /c "IF NOT EXIST shippable\testresults mkdir shippable\testresults" 
 script:
  - msbuild AsmSpy.sln
- - cmd /c "packages\OpenCover.4.5.1923\OpenCover.Console.exe -register:user -target:".\runTests.cmd" -output:shippable\codecoverage\coveragereport.xml -log:All"
+ - cmd /c .\runTests.cmd" -output:shippable\codecoverage\coveragereport.xml -log:All"
  
